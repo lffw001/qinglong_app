@@ -8,8 +8,6 @@
 
 各个历史版本请关注[青龙客户端APP更新通知](https://t.me/qinglongapp),或者在 [Release](https://github.com/qinglongapp/qinglong_app/releases) 里下载
 
-有 bug 请提 issue
-
 
 
 
