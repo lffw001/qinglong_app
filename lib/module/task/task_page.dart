@@ -1386,6 +1386,8 @@ class EditModeButton extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, ref) {
+    final BottomNavigationBarThemeData bottomTheme = BottomNavigationBarTheme.of(context);
+
     return Container(
       alignment: Alignment.center,
       margin: const EdgeInsets.only(
@@ -1401,7 +1403,7 @@ class EditModeButton extends ConsumerWidget {
             Icon(
               icon,
               size: 18,
-              color: ref.watch(themeProvider).themeColor.title2Color(),
+              color: bottomTheme.unselectedLabelStyle?.color ?? Colors.grey,
             ),
             const SizedBox(
               height: 3,
@@ -1410,7 +1412,7 @@ class EditModeButton extends ConsumerWidget {
               title,
               style: TextStyle(
                 fontSize: 14,
-                color: ref.watch(themeProvider).themeColor.title2Color(),
+                color: bottomTheme.unselectedLabelStyle?.color ?? Colors.grey,
               ),
             ),
           ],
